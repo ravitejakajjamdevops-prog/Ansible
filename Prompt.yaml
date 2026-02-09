@@ -1,7 +1,7 @@
 - name: User Prompt
   hosts: web
   vars_prompt:
-  - name: Username
+  - name: username
     Prompt: Please enter your Username
     private: false
 
@@ -12,4 +12,4 @@
   tasks:
    - name: Print username and Password
      ansible.builtin.debug:
-      msg: "Username is {{ Username }}"
+      msg: "Username is {{ username }}"
