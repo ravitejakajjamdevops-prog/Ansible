@@ -1,3 +1,5 @@
-<Students>
-
-</Students>
+- name: Ping test
+  hosts: web
+  tasks:
+  - name: Ping the web server
+    ansible.builtin.ping:
