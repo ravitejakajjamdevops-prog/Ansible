@@ -1,6 +1,7 @@
 - name: To print variables
   hosts: web
-  vars: Ravi
+  vars: 
+    Name: "Ravi"
   tasks:
   - name: Variables demo
     ansible.builtin.debug:
