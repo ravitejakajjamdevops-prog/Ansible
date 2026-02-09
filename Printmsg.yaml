@@ -1,5 +1,6 @@
 - name: To print the message
   hosts: web
   tasks:
+   - name: To print message
     ansible.builtin.debug:
-      msg "Heelo World"
+      msg: "Heelo World"
