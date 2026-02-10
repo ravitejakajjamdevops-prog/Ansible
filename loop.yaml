@@ -1,0 +1,11 @@
+- name: to Print names using loop
+  hosts: local
+  connection: local
+  tasks:
+  - name: List using loops
+    ansible.builtin.debug:
+     msg: "{{ item }}"
+    loop:
+     - Linux
+     - Jenkins
+     - Terraform
