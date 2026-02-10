@@ -7,7 +7,7 @@
       state: present
      ansible.builtin.debug: 
       msg: "Installing {{ item }} package"
-     loops:
+     loop:
 
       - mysql
       - nginx
