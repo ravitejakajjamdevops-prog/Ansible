@@ -1,0 +1,14 @@
+- name: Install packages using loops
+  hosts: all
+  tasks:
+   - name: Install packages
+     ansible.builtin.packages:
+      name: "{{ item }}"
+      state: present
+     ansible.builtin.debug: 
+      msg: "Installing {{ item }} package"
+     loops:
+
+      - mysql
+      - nginx
+      - maven   
