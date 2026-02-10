@@ -1,5 +1,6 @@
 - name: Install ansible
   hosts: web
+  become: yes
   tasks:
   - name: To install ansible
     ansible.builtin.package:
