@@ -1,6 +1,7 @@
 - name: Shell Vs Command
   hosts: local
   connection: local
+  become: yes
   tasks:
   - name: Shell Command
     ansible.builtin.shell: /etc/passwd | grep -i root
