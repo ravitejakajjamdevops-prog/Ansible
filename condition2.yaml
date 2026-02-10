@@ -3,9 +3,9 @@
   connection: local
   vars:
     Number: 20 
-    Rem: Number % 2
+    Number2: 2
   tasks:
   - name: Print even
     ansible.builtin.debug:
-     msg: "Even number {{ Rem }}"
+     msg: "Even number {{ Number % Number2 }}"
   
