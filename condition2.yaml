@@ -5,7 +5,10 @@
     Number: 20 
     Number2: 2
   tasks:
+  - name: Store it in a variables
+    ansible.builtin.command: {{ Number % Number2 }}
+    register: Rem
   - name: Print even
     ansible.builtin.debug:
-     msg: "Even number {{ Number % Number2 }}"
-  
+     msg: "Even number"
+    when: Rem == 0
