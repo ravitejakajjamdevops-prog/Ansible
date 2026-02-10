@@ -5,12 +5,12 @@
   tasks:
    - name: Install packages
      ansible.builtin.package:
-      name: "{{ item }}"
-      state: present
+      name: "{{ item.name }}"
+      state: "{{ item.present }}"
      #ansible.builtin.debug: 
       #msg: "Installing {{ item }} package"
      loop:
 
-      - mysql
-      - nginx
-      - maven   
+      - { name: "mongodb" , state: "present" }
+      - { name: "nginx" , state: "absent" }
+      - { name: "maven" , state: "absent" }
