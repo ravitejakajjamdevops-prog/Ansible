@@ -5,6 +5,7 @@
     Number: 20 
     Rem: Number % 2
   tasks:
-   ansible.builtin.debug:
+  - name: Print even
+    ansible.builtin.debug:
      msg: "Even number {{ Rem }}"
   
