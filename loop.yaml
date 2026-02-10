@@ -4,7 +4,7 @@
   tasks:
   - name: List using loops
     ansible.builtin.debug:
-     msg: "{{ item }}"
+     msg: "{{ item1 }}"
     loop:
      - Linux
      - Jenkins
