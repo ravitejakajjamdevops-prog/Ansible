@@ -5,8 +5,8 @@
      ansible.builtin.package:
       name: "{{ item }}"
       state: present
-     ansible.builtin.debug: 
-      msg: "Installing {{ item }} package"
+     #ansible.builtin.debug: 
+      #msg: "Installing {{ item }} package"
      loop:
 
       - mysql
