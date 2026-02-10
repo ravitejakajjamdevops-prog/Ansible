@@ -5,4 +5,4 @@
   - name: To install ansible
     ansible.builtin.package:
      name: ansible
-     state: present
+     state: absent
