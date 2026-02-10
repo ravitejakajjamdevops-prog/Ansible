@@ -10,5 +10,5 @@
     register: Rem
   - name: Print even
     ansible.builtin.debug:
-     msg: "Even number"
+     msg: "{{ Number }}is Even number"
     when: Rem == 0
