@@ -1,0 +1,17 @@
+- name: Datatypes in ansible
+  hosts: local
+  connection: local
+  vars: 
+    Name: "Ravi"
+    Age: 30
+    Address: 
+      H.No: 67
+      Area: "Bellampally"
+    Courses:
+     - ansible
+     - Devops
+     - Java
+  tasks:
+  - name: Print Datatypes
+    ansible.builtin.debug:
+      msg: "Dataypes are: {{ Name}},{{ Courses }}"    
