@@ -8,7 +8,7 @@
 
   - name: Check whether Redhat
     ansible.builtin.debug:
-     msg: "This is redhat"
+      msg: "This is redhat"
     when: ansible_facts.os_family == "Redhat"
 
   - name: Check if Debian
