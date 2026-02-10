@@ -1,0 +1,7 @@
+- name: Install ansible
+  hosts: local
+  tasks:
+  - name: To install ansible
+    ansible.builtin.package:
+     name: ansible
+     state: present
