@@ -2,7 +2,7 @@
   hosts: all
   tasks:
    - name: Install packages
-     ansible.builtin.packages:
+     ansible.builtin.package:
       name: "{{ item }}"
       state: present
      ansible.builtin.debug: 
