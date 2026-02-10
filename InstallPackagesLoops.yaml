@@ -11,6 +11,6 @@
       #msg: "Installing {{ item }} package"
      loop:
 
-      - { name: "mongodb" , state: "present" }
+      - { name: "ant" , state: "present" }
       - { name: "nginx" , state: "absent" }
       - { name: "maven" , state: "absent" }
