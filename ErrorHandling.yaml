@@ -13,6 +13,6 @@
       msg: "{{ user_output }}"
 
   - name: Create user
-    ansible.builtin.command: useradd roboshop
+    ansible.builtin.command: useradd roboshop1
     register: robo_output
     when: user_output != 0
