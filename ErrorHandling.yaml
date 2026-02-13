@@ -3,7 +3,7 @@
   connection: local
   tasks: 
   - name: Checking whether user exists
-    ansible.builtin.command: id roboshop
+    ansible.builtin.command: id root
     register: user_output
     ignore_errors: true
 
