@@ -1,6 +1,7 @@
 - name: Handling errors in ansible
   hosts: localhost
   connection: local
+  become: yes
   tasks: 
   - name: Checking whether user exists
     ansible.builtin.command: useradd roboshop
