@@ -4,3 +4,7 @@
     - name: Ping servers
       ansible.builtin.ping:
       register: ping_output
+
+    - name: print the output
+      ansible.builtin.debug:
+        msg: "{{ ping_output }}"
