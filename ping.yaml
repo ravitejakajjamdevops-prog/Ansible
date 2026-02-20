@@ -3,5 +3,4 @@
   tasks:
     - name: Ping servers
       ansible.builtin.ping:
-        register: Ping_output
-        msg: "Ping {{ Ping_output }}"
+       
