@@ -3,4 +3,4 @@
   tasks:
     - name: Ping servers
       ansible.builtin.ping:
-       register: ping_output
+      register: ping_output
